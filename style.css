@@ -18,6 +18,60 @@ body {
   background-color: #f7f7f7;
 }
 
+#nav {
+  /* height: 100px; */
+  width: 100%;
+  /* background-color: burlywood; */
+  position: fixed;
+  z-index: 99;
+  padding: 25px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+#nav #nav-part2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+#links {
+  padding: 10px;
+}
+
+#nav-part1 {
+  height: 82px;
+  /* background-color: red; */
+  overflow: hidden;
+}
+
+#nav-part1 svg {
+  display: block;
+}
+
+#nav-part2 #links a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 0 20px;
+}
+
+#icons {
+  padding: 10px;
+  border-radius: 50px;
+  background-color: #f7f7f7;
+}
+
+#nav-part2 #icons i {
+  font-size: 18px;
+  margin: 0 20px;
+  font-weight: 100px;
+}
 #cursor {
   height: 180px;
   width: 180px;
@@ -25,6 +79,7 @@ body {
   border-radius: 50%;
   position: fixed;
   transform: translate(-50%, -50%) scale (0);
+  /*z-index: 9;*/ /*might be cursor problem*/
 }
 
 #page1 {
@@ -129,8 +184,8 @@ body {
 .child {
   height: 54vh;
   width: 38vw;
-  /* background-color: red;
-  border: 2px solid #000; */
+  /* background-color: red; */
+  border: 2px solid #000;
   position: relative;
   display: flex;
   align-items: center;
